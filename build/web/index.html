@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Visualizador</title>
+
+        <link rel="stylesheet" type="text/css" href="app/css/bootstrap.css" >
+        <link rel="stylesheet" type="text/css" href="app/css/ol.css">
+        <link rel="stylesheet" type="text/css" href="app/css/main.css">
+    </head>
+
+    <body ng-app="geoApp">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" 
+                            data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
+                            aria-expanded="false">
+                        <span class="sr-only">colapsable</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Inicio</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#!/visualizador">Visualizador
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div ng-view ></div>
+        </div>
+
+        <script type="text/javascript" src="app/scripts/lib/ol.js"></script>
+        <script type="text/javascript" src="app/scripts/lib/angular.js"></script>
+        <script type="text/javascript" src="app/scripts/lib/angular-route.js"></script>
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="app/scripts/controllers/mapaController.js"></script>
+
+    </body>
+</html>
